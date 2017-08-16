@@ -2,7 +2,10 @@
   <div id="app">
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
-    <el-button @click.native="startHacking">Yes!</el-button>
+    <el-button @click.native="startHacking">{{ $t("message.hello") }}</el-button>
+    <p></p>
+      <p>{{ $t("message.hello") }}</p>
+      <component-hello></component-hello>
   </div>
 </template>
 
